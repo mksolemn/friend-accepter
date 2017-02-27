@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Facebook Friend",
+    "version": "1.0.0",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": [
+            "https://www.facebook.com/friends/requests/*"
+        ],
+        "js": ["jquery-3.1.1.min.js", "clickerscript.js"],
+        "css": ["styles.css"]
+    }],
+
+    "web_accessible_resources": [
+        "styles.css"
+    ]
+}

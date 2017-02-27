@@ -1,0 +1,37 @@
+.no-pic {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #f00;
+  text-align: center; }
+
+.dum-current {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(20, 20, 20, 0.45);
+  z-index: 1;
+  transition: all ease-in-out .5s; }
+
+.counter {
+  padding: 10px 20px;
+  position: fixed;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 20px;
+  z-index: 99999; }
+  .counter.accepted {
+    background: #1abc9c;
+    bottom: 85px;
+    right: 30px; }
+  .counter.rejected {
+    background: #e74c3c;
+    bottom: 30px;
+    right: 30px; }
+
+/*# sourceMappingURL=styles.css.map */
