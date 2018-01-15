@@ -1,6 +1,6 @@
-(function($) {
-console.log("clicker script runs");
-    $(document).ready(function() {
+(function ($) {
+    console.log("clicker script runs");
+    $(document).ready(function () {
 
         var acceptorModule = {}
 
@@ -10,7 +10,7 @@ console.log("clicker script runs");
             randomNum: 12345,
 
 
-            loopRequests: function() {
+            loopRequests: function () {
 
                 var acceptedNum = 0; //counter for accepted
                 var withoutImageNum = 0 // users without image
@@ -21,7 +21,7 @@ console.log("clicker script runs");
                 $('body').append('<div class="counter accepted">Accepted: 0</div>');
                 $('body').append('<div class="counter rejected">Rejected: 0</div>');
 
-                $(".friendRequestItem").each(function(index) {
+                $(".friendRequestItem").each(function (index) {
 
                     console.log('for each is running');
 
@@ -32,14 +32,14 @@ console.log("clicker script runs");
                     randomNum = Math.floor(Math.random() * (2500 - 2000 + 1) + 2000);
 
 
-                    var t = setTimeout(function() {
+                    var t = setTimeout(function () {
 
                         setIntCounter += 1;
 
                         console.log('set interval is running');
 
                         // highlight current target
-                        $(_this).css({ 'position': 'relative' });
+                        $(_this).css({'position': 'relative'});
 
                         previous = $(_this);
 
@@ -77,22 +77,13 @@ console.log("clicker script runs");
                         }
 
 
-
                     }, randomNum * index);
                 });
             }
 
-
-
-
-
         }
 
-
-
-        acceptorModule.loopRequests();;
-
-
+        acceptorModule.loopRequests();
 
     });
 
